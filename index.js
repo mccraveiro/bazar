@@ -1,0 +1,1 @@
+// call dist/index.js
