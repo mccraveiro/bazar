@@ -17,6 +17,4 @@ app.get('*', function(req, res) {
   res.end();
 });
 
-app.listen(config.port);
-
-console.log('Running on localhost:' + config.port);
+module.exports = app;

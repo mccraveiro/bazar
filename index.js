@@ -1,1 +1,1 @@
-// call dist/index.js
+module.exports = require('./dist/');
