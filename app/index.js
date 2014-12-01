@@ -12,6 +12,10 @@ app.use(express.static(__dirname + '/client'));
 app.use(bodyParser.json());
 app.use('/api/', api);
 
+app.get('*', function(req, res) {
+  res.sendFile(__dirname + '/client/index.html');
+});
+
 app.listen(config.port);
 
 console.log('Running on localhost:' + config.port);

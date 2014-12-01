@@ -11,4 +11,12 @@ api.get('/', function (req, res) {
   res.end();
 });
 
+api.get('/hey', function (req, res) {
+  res.status(200);
+  res.json({
+    hey: 'world'
+  });
+  res.end();
+});
+
 module.exports = api;
