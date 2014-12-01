@@ -14,6 +14,7 @@ app.use('/api/', api);
 
 app.get('*', function(req, res) {
   res.sendFile(__dirname + '/client/index.html');
+  res.end();
 });
 
 app.listen(config.port);
